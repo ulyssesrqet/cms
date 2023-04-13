@@ -1,0 +1,46 @@
+
+<script src="/public/static/common/jquery/1.12.4/jquery.min.js"></script>
+<div class="al">
+  {if isset($category_name)}
+    <div class="al-title"><h1>{$category_name}</h1></div>
+  {/if}
+  {if $article}
+    {foreach $article as $v}
+      <div class="al-each">
+        <div class="al-info">
+          <a href="/show?id={$v.id}">{$v.title}</a>
+        </div>
+        {if $v.image}
+          <div class="al-img">
+            <a href="/show?id={$v.id}">
+              <img src="/uploads/images/{$v.image}" alt="点击阅读文章">
+            </a>
+          </div>
+        {/if}
+        <div class="al-more">
+          <span>作者：{$v.author} | 发表于：{$v.created_at}
+           <!-- {if  $user.name !=""} <a href="/index/collect?id={$v.id}" class="collect">收藏</a></span>{/if}-->
+
+        </div>
+      </div>
+    {/foreach}
+  {else}
+    <div class="al-message">
+      该栏目内暂时没有内容。<p><a href="/">点击返回首页</a></p>
+    </div>
+  {/if}
+</div>
+<div class="pagelist">{$page_html nofilter}</div>
+
+
+<script>
+  $('.collect').click(function() {
+    if (confirm('您确定要收藏此篇文章？')) {
+      main.ajaxPost($(this).attr('href'), function(data) {
+        alert(data['msg']);
+        location.href = '/index/index';
+      });
+    }
+    return false;
+  });
+</script>

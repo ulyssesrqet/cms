@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="37459644-df01-4adc-8f01-b84b4b242fb3" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
+    <execution>
+      <executable />
+    </execution>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration">
+    <include_path>
+      <path value="$PROJECT_DIR$/vendor/composer" />
+      <path value="$PROJECT_DIR$/vendor/ezyang/htmlpurifier" />
+      <path value="$PROJECT_DIR$/vendor/smarty/smarty" />
+    </include_path>
+  </component>
+  <component name="ProjectId" id="29Fd99eiZ8VKJu7zGcQ8TfWjMPW" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\13700\Desktop\wangchenhao\chencms\cms\public\static\images" />
+      <recent name="E:\PHP\cms\resources\views\sub" />
+      <recent name="E:\PHP\cms\public\static\images" />
+      <recent name="E:\PHP\cms\app\Http" />
+      <recent name="E:\PHP\cms\resources\views\admin" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\PHP\cms\app" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="37459644-df01-4adc-8f01-b84b4b242fb3" name="Default Changelist" comment="" />
+      <created>1652712613448</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1652712613448</updated>
+      <workItem from="1652712614584" duration="7292000" />
+      <workItem from="1652836846657" duration="1958000" />
+      <workItem from="1653013663156" duration="1361000" />
+      <workItem from="1653038090133" duration="6046000" />
+      <workItem from="1654236722410" duration="21537000" />
+      <workItem from="1654267002145" duration="1290000" />
+      <workItem from="1654300824399" duration="22204000" />
+      <workItem from="1654409529341" duration="3387000" />
+      <workItem from="1654416696899" duration="1353000" />
+      <workItem from="1654420187816" duration="2118000" />
+      <workItem from="1654428471558" duration="109000" />
+      <workItem from="1654429614361" duration="604000" />
+      <workItem from="1654516708879" duration="8313000" />
+      <workItem from="1654558577425" duration="30401000" />
+      <workItem from="1654734437551" duration="5259000" />
+      <workItem from="1654777872788" duration="4761000" />
+      <workItem from="1654814511405" duration="2816000" />
+      <workItem from="1654817738995" duration="373000" />
+      <workItem from="1654826318426" duration="9848000" />
+      <workItem from="1655019889906" duration="2980000" />
+      <workItem from="1655166638303" duration="3316000" />
+      <workItem from="1677992698007" duration="963000" />
+      <workItem from="1678071221827" duration="1140000" />
+      <workItem from="1679660517402" duration="982000" />
+      <workItem from="1679661880304" duration="6373000" />
+      <workItem from="1679738781017" duration="587000" />
+      <workItem from="1679820255040" duration="2190000" />
+      <workItem from="1679924413380" duration="1190000" />
+      <workItem from="1680254147307" duration="13000" />
+      <workItem from="1681203727894" duration="30599000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="679" y="352" key="NewPhpClassDialog" timestamp="1653014663942">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="679" y="352" key="NewPhpClassDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1653014663942" />
+    <state x="463" y="151" key="SettingsEditor" timestamp="1653014094101">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="463" y="151" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1653014094101" />
+    <state x="807" y="510" key="com.intellij.ide.util.TipDialog" timestamp="1653013663219">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="807" y="510" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1653013663219" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1653015024619">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1653015024619" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/myframe/HttpException.php</url>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

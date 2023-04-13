@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{$title} - 笔记本电脑故障在线诊断系统</title>
+  <link rel="stylesheet" href="/static/css/style.css">
+  <script src="/static/js/jquery.min.js"></script>
+  <script src="/static/js/common.js"></script>
+  <style>
+    input{
+      float: left;
+      height: 35px;
+      width: 30%;
+      margin-top:10px ;
+      padding-left: 13px;
+    }
+
+    #aaa{
+      position: absolute;
+      margin-left: 1300px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <!--页面顶部-->
+  <div class="top">
+    <div class="top-container">
+<!--      <div class="top-logo">-->
+<!--        <a href="./">-->
+<!--          <img src="/static/images/computer.png" alt="管理系统">-->
+<!--        </a>-->
+<!--      </div>-->
+      <form action="/index/getAim" method="get" style="margin: 0px">
+        <input type="text" name="question" placeholder="请输入你的问题...">
+      </form>
+<!--      <input type="text" placeholder="请输入你的问题...">-->
+      <div class="top-nav">
+<!--        <form action="/admin/user/getUsername" method="get">-->
+<!--          <input type="text" name="username"  placeholder="请输入你的问题..." required>-->
+<!--        </form>-->
+        <a href="/" class="{if $id == 0}curr{/if}">首页</a>
+        {foreach $category as $v}
+<!--        <a href="/?id={$v.id}" class="{if $id == $v.id}curr{/if}">{$v.name}</a>-->
+        <a href="/?id={$v.id}" class="{if $id == $v.id}curr{/if}">{$v.name}</a>
+
+        {/foreach}
+
+
+        {if  $user.name !=""}
+        <!--<div id="aaa"><ul class="nav navbar-right"  style="font-size: 20px ;margin-top: -10px ">-->
+
+          <a href="#" style="font-size:20px;color: red"><i class="fa fa-user fa-fw"></i>{$user.name}</a>
+       <!-- <a href="/index/collectList/?id=100">我的收藏</a></li>-->
+          <a href="/admin/login/logout" style="color: cornflowerblue;margin-left: 10px">退出
+          </a>
+
+        </ul><!--</div>-->
+        {else}
+       <!-- <div id="aaa">--><a  href="/admin/login/index">登录/注册</a><!--</div>-->{/if}
+      </div>
+
+
+      <div class="top-toggle jq-toggle-btn"><i></i><i></i><i></i></div>
+      <!--{if  $user.name !=""}
+      <div id="aaa"><ul class="nav navbar-right"  style="font-size: 20px ;margin-top: -10px ">
+          欢迎
+          <a href="#"><i class="fa fa-user fa-fw"></i>{$user.name}</a>
+          <a href="/admin/login/logout" style="color: cornflowerblue;margin-left: 10px">退出
+          </a>
+
+      </ul></div>
+      {else}
+      <div id="aaa"><a  href="/admin/login/index">登录/注册</a></div>{/if}-->
+    </div>
+
+  </div>
+  <!--页面内容-->
+  <div class="main">
+    {block name="content"}{/block}
+  </div>
+  <!--页面尾部-->
+  <div class="footer">笔记本电脑故障在线诊断系统</div>
+</body>
+</html>
