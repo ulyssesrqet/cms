@@ -18,7 +18,7 @@ class IndexController extends Controller
         $user = $_SESSION['cms']['admin'];
         $id=(int)$this->request->get('id',0);
         $page=(int)$this->request->get("page",1);
-        $size=2;
+        $size=6;
         $offset=($page-1)*$size;
         $where=[];
         if($id){
@@ -156,9 +156,16 @@ class IndexController extends Controller
 
     //todo 添加文章模糊搜索，对现象匹配问题
     public function getAim(Category $category , Article $article){
+        $id=(int)$this->request->get('id',0);
+        $page=(int)$this->request->get("page",1);
+        $size=6;
+        $offset=($page-1)*$size;
+        $where=[];
+        $where['show']=1;
+
         $question = $this->request->get('question','');
         $question1 = "%$question%";
-        $data = $article->where("content",'like',$question1)->get();
+        $data = $article->where("content",'like',$question1)->orderBy('id','DESC')->limit($offset,$size)->get();
 //        传递导航栏分类
         $this->category($category);
 //        传递侧边文章显示
@@ -167,6 +174,11 @@ class IndexController extends Controller
         $this->assign('article',$data);
 //        todo 去掉轮播图
         $this->assign('id',999);
+
+//       文章分页
+        $total=$article->where("content",'like',$question1)->count();
+        $url="?id=$id&page=";
+        $this->assign('page_html',Page::html($url,$total,$page,$size));
         return $this->fetch('index');
     }
 }
