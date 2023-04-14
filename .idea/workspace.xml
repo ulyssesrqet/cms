@@ -2,9 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="37459644-df01-4adc-8f01-b84b4b242fb3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/CategoryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/CategoryController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/IndexController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/IndexController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/static/js/common.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/static/js/common.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/category_edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/category_edit.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/category_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/category_list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layout.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layout.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/sub/sidebar.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/sub/sidebar.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/241e9e536b9382285a52191a6b577babe7410454_0.file.category_list.html.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/241e9e536b9382285a52191a6b577babe7410454_0.file.category_list.html.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/3539eb4580a24df98f2521bb721ebc625dd514a7_0.file.sidebar.html.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/3539eb4580a24df98f2521bb721ebc625dd514a7_0.file.sidebar.html.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/5de35d2fdbb2738cd3e1e8026bf61588f973e56d_0.file.layout.html.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/5de35d2fdbb2738cd3e1e8026bf61588f973e56d_0.file.layout.html.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/60f4f2860e63e0b37ccfdeb594e211de97f95842_0.file.index.html.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/60f4f2860e63e0b37ccfdeb594e211de97f95842_0.file.index.html.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/ee13c92b58da24a9ce27948e5f3106a911cfed10_0.file.category_edit.html.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/ee13c92b58da24a9ce27948e5f3106a911cfed10_0.file.category_edit.html.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -58,15 +70,15 @@
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\PHP\cms\app" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\chenjunhui\chencms\cms" />
       <recent name="C:\Users\13700\Desktop\wangchenhao\chencms\cms\public\static\images" />
       <recent name="E:\PHP\cms\resources\views\sub" />
       <recent name="E:\PHP\cms\public\static\images" />
       <recent name="E:\PHP\cms\app\Http" />
-      <recent name="E:\PHP\cms\resources\views\admin" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\PHP\cms\app" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -120,7 +132,10 @@
       <workItem from="1679820255040" duration="2190000" />
       <workItem from="1679924413380" duration="1190000" />
       <workItem from="1680254147307" duration="13000" />
-      <workItem from="1681203727894" duration="32093000" />
+      <workItem from="1681203727894" duration="47657000" />
+      <workItem from="1681470841177" duration="185000" />
+      <workItem from="1681471087111" duration="7103000" />
+      <workItem from="1681484783644" duration="6980000" />
     </task>
     <servers />
   </component>
@@ -132,7 +147,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>

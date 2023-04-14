@@ -1,6 +1,6 @@
 //启动事件
 $(function(){
-	//导航栏自动收起来
+	// 导航栏自动收起来
 	(function(){
 		var $body = $("body");
 		var $top = $(".top-container");
@@ -35,7 +35,7 @@ $(function(){
 			});
 		}
 	})();
-	//幻灯片切换
+	// 幻灯片切换
 	(function(){
 		var $slideWrap = $(".slide-wrap");     //外层容器
 		var $imgWrap = $(".slide-wrap ul");    //图片容器

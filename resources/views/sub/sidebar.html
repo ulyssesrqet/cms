@@ -4,7 +4,9 @@
     <div class="si-title">故障类型</div>
     <div class="si-p1">
       {foreach $category as $v}
+      {if $v.parent_id == 0}
       <a href="/?id={$v.id}" class="{if $id == $v.id}curr{/if}">{$v.name}</a>
+      {/if}
       {/foreach}
     </div>
   </div>

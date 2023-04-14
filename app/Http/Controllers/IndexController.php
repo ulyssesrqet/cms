@@ -175,7 +175,7 @@ class IndexController extends Controller
 //        todo 去掉轮播图
         $this->assign('id',999);
 
-//       文章分页
+//       文章分页 todo 需要完善后退时显示全部文章bug
         $total=$article->where("content",'like',$question1)->count();
         $url="?id=$id&page=";
         $this->assign('page_html',Page::html($url,$total,$page,$size));

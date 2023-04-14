@@ -11,6 +11,7 @@
         <tr>
           <th>栏目名称</th>
           <th>排序值</th>
+          <th>父排序值</th>
           <th>操作</th>
         </tr>
       </thead>
@@ -20,6 +21,7 @@
         <tr>
           <td><a href="/admin/category/edit?id={$v.id}">{$v.name}</a></td>
           <td>{$v.sort}</td>
+          <td>{$v.parent_id}</td>
           <td>
             <a href="/admin/category/edit?id={$v.id}" style="margin-right:5px;">编辑</a>
             <a href="/admin/category/delete?id={$v.id}" class="j-del text-danger">删除</a>

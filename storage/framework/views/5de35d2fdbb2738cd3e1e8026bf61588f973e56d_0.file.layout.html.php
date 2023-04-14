@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.3.1, created on 2023-04-12 19:39:40
+/* Smarty version 4.3.1, created on 2023-04-15 03:05:58
   from 'D:\chenjunhui\chencms\cms\resources\views\layout.html' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.3.1',
-  'unifunc' => 'content_6436987c152a61_46409075',
+  'unifunc' => 'content_6439a4160d9148_58553723',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '5de35d2fdbb2738cd3e1e8026bf61588f973e56d' => 
     array (
       0 => 'D:\\chenjunhui\\chencms\\cms\\resources\\views\\layout.html',
-      1 => 1681299560,
+      1 => 1681499155,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_6436987c152a61_46409075 (Smarty_Internal_Template $_smarty_tpl) {
+function content_6439a4160d9148_58553723 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, false);
 ?>
@@ -33,111 +33,163 @@ $_smarty_tpl->inheritance->init($_smarty_tpl, false);
  - 笔记本电脑故障在线诊断系统</title>
   <link rel="stylesheet" href="/static/css/style.css">
   <?php echo '<script'; ?>
- src="/static/js/jquery.min.js"><?php echo '</script'; ?>
+ type="text/javascript" src="/static/js/jquery.min.js"><?php echo '</script'; ?>
 >
-  <?php echo '<script'; ?>
- src="/static/js/common.js"><?php echo '</script'; ?>
->
+<!--  <?php echo '<script'; ?>
+ type="text/javascript" src="/static/js/common.js"><?php echo '</script'; ?>
+>-->
   <style>
     input{
       float: left;
       height: 35px;
-      width: 30%;
+      width: 20%;
       margin-top:10px ;
+      margin-left:240px ;
       padding-left: 13px;
     }
-
-    #aaa{
-      position: absolute;
-      margin-left: 1300px;
-      margin-top: 20px;
+    nav {
+        background-color: #f8f8f8;
+        font-family: Arial, sans-serif;
     }
+
+    ul {
+        margin-top: 0;
+        margin-right: 225px;
+        float: left;
+        list-style: none;
+        padding: 0;
+    }
+
+    li {
+        width: 100px;
+        margin: 0px;
+        float: left;
+        position: relative;
+    }
+
+    a {
+        color: #333;
+        display: block;
+        padding: 8px 12px;
+        text-decoration: none;
+    }
+
+    /* 下拉菜单 */
+    li ul {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        z-index: 1;
+        background-color: #fff;
+        border: 1px solid #ccc;
+        padding: 0;
+    }
+
+    li:hover ul {
+        display: block;
+    }
+
+    li ul li {
+        float: none;
+    }
+
+    li ul li a {
+        padding: 8px 12px;
+        white-space: nowrap;
+    }
+
+    li ul li:hover {
+        background-color: #f2f2f2;
+    }
+
+    /* 悬停效果 */
+    li:hover {
+        background-color: #ccc;
+    }
+
+    /* 当前页 */
+    li.current {
+        background-color: #eee;
+    }
+
+
+
   </style>
 </head>
 <body>
   <!--页面顶部-->
+  <nav>
   <div class="top">
-    <div class="top-container">
-<!--      <div class="top-logo">-->
-<!--        <a href="./">-->
-<!--          <img src="/static/images/computer.png" alt="管理系统">-->
-<!--        </a>-->
-<!--      </div>-->
+<!--    <div class="top-container">-->
       <form action="/index/getAim" method="get" style="margin: 0px">
         <input type="text" name="question" placeholder="请输入你的问题...">
       </form>
-<!--      <input type="text" placeholder="请输入你的问题...">-->
       <div class="top-nav">
-<!--        <form action="/admin/user/getUsername" method="get">-->
-<!--          <input type="text" name="username"  placeholder="请输入你的问题..." required>-->
-<!--        </form>-->
-        <a href="/" class="<?php if ($_smarty_tpl->tpl_vars['id']->value == 0) {?>curr<?php }?>">首页</a>
-        <?php
+          <ul>
+            <li><a href="/" class="<?php if ($_smarty_tpl->tpl_vars['id']->value == 0) {?>curr<?php }?>">首页</a></li>
+            <?php
 $_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['category']->value, 'v');
 $_smarty_tpl->tpl_vars['v']->do_else = true;
 if ($_from !== null) foreach ($_from as $_smarty_tpl->tpl_vars['v']->value) {
 $_smarty_tpl->tpl_vars['v']->do_else = false;
 ?>
-<!--        <a href="/?id=<?php echo htmlentities(mb_convert_encoding((string)$_smarty_tpl->tpl_vars['v']->value['id'], 'UTF-8', 'UTF-8'), ENT_QUOTES, 'UTF-8', true);?>
-" class="<?php if ($_smarty_tpl->tpl_vars['id']->value == $_smarty_tpl->tpl_vars['v']->value['id']) {?>curr<?php }?>"><?php echo htmlentities(mb_convert_encoding((string)$_smarty_tpl->tpl_vars['v']->value['name'], 'UTF-8', 'UTF-8'), ENT_QUOTES, 'UTF-8', true);?>
-</a>-->
-        <a href="/?id=<?php echo htmlentities(mb_convert_encoding((string)$_smarty_tpl->tpl_vars['v']->value['id'], 'UTF-8', 'UTF-8'), ENT_QUOTES, 'UTF-8', true);?>
+              <?php if ($_smarty_tpl->tpl_vars['v']->value['parent_id'] == 0) {?>
+                  <li class="nav-li" style="display: inline" id="nav-li">
+                      <a href="/?id=<?php echo htmlentities(mb_convert_encoding((string)$_smarty_tpl->tpl_vars['v']->value['id'], 'UTF-8', 'UTF-8'), ENT_QUOTES, 'UTF-8', true);?>
 " class="<?php if ($_smarty_tpl->tpl_vars['id']->value == $_smarty_tpl->tpl_vars['v']->value['id']) {?>curr<?php }?>"><?php echo htmlentities(mb_convert_encoding((string)$_smarty_tpl->tpl_vars['v']->value['name'], 'UTF-8', 'UTF-8'), ENT_QUOTES, 'UTF-8', true);?>
 </a>
-
-        <?php
+                      <ul class="drop-box">
+                          <li class="drop-li"><a href="">例子1</a></li>
+                          <li class="drop-li"><a href="">例子2</a></li>
+                          <li class="drop-li"><a href="">例子3</a></li>
+                      </ul>
+                  </li>
+              <?php }?>
+            <?php
 }
 $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
-
-
-        <?php if ($_smarty_tpl->tpl_vars['user']->value['name'] != '') {?>
-        <!--<div id="aaa"><ul class="nav navbar-right"  style="font-size: 20px ;margin-top: -10px ">-->
-
-          <a href="#" style="font-size:20px;color: red"><i class="fa fa-user fa-fw"></i><?php echo htmlentities(mb_convert_encoding((string)$_smarty_tpl->tpl_vars['user']->value['name'], 'UTF-8', 'UTF-8'), ENT_QUOTES, 'UTF-8', true);?>
-</a>
-       <!-- <a href="/index/collectList/?id=100">我的收藏</a></li>-->
-          <a href="/admin/login/logout" style="color: cornflowerblue;margin-left: 10px">退出
-          </a>
-
-        </ul><!--</div>-->
-        <?php } else { ?>
-       <!-- <div id="aaa">--><a  href="/admin/login/index">登录/注册</a><!--</div>--><?php }?>
+            <?php if ($_smarty_tpl->tpl_vars['user']->value['name'] != '') {?>
+              <li><a href="#" style="font-size:20px;color: red"><i class="fa fa-user fa-fw"></i><?php echo htmlentities(mb_convert_encoding((string)$_smarty_tpl->tpl_vars['user']->value['name'], 'UTF-8', 'UTF-8'), ENT_QUOTES, 'UTF-8', true);?>
+</a></li>
+              <li><a href="/admin/login/logout" style="color: cornflowerblue;margin-left: 10px">退出</a></li>
+            <?php } else { ?>
+            <li><a  href="/admin/login/index">登录/注册</a></li>
+            <?php }?>
+          </ul>
       </div>
 
 
       <div class="top-toggle jq-toggle-btn"><i></i><i></i><i></i></div>
-      <!--<?php if ($_smarty_tpl->tpl_vars['user']->value['name'] != '') {?>
-      <div id="aaa"><ul class="nav navbar-right"  style="font-size: 20px ;margin-top: -10px ">
-          欢迎
-          <a href="#"><i class="fa fa-user fa-fw"></i><?php echo htmlentities(mb_convert_encoding((string)$_smarty_tpl->tpl_vars['user']->value['name'], 'UTF-8', 'UTF-8'), ENT_QUOTES, 'UTF-8', true);?>
-</a>
-          <a href="/admin/login/logout" style="color: cornflowerblue;margin-left: 10px">退出
-          </a>
-
-      </ul></div>
-      <?php } else { ?>
-      <div id="aaa"><a  href="/admin/login/index">登录/注册</a></div><?php }?>-->
     </div>
 
-  </div>
+<!--  </div>-->
+  </nav>
   <!--页面内容-->
   <div class="main">
     <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_13375627956436987c151b67_66752525', "content");
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_12240726176439a4160d7dd5_02645174', "content");
 ?>
 
   </div>
   <!--页面尾部-->
   <div class="footer">笔记本电脑故障在线诊断系统</div>
 </body>
-</html><?php }
+</html>
+
+<?php echo '<script'; ?>
+>
+<?php echo '</script'; ?>
+>
+
+<?php }
 /* {block "content"} */
-class Block_13375627956436987c151b67_66752525 extends Smarty_Internal_Block
+class Block_12240726176439a4160d7dd5_02645174 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'content' => 
   array (
-    0 => 'Block_13375627956436987c151b67_66752525',
+    0 => 'Block_12240726176439a4160d7dd5_02645174',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {

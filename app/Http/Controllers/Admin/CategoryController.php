@@ -34,7 +34,8 @@ class CategoryController extends CommonController
         $id = $this->request->post('id');
         $data = [
             'name' => $this->request->post('name', ''),
-            'sort' => $this->request->post('sort', 0)
+            'sort' => $this->request->post('sort', 0),
+            'parent_id' => $this->request->post('parent_id', 0)
         ];
         if ($id) {
             $category->where('id', $id)->update($data);
