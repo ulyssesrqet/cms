@@ -2,31 +2,27 @@
   <h2>{if $id}修改{else}添加{/if}栏目</h2>
 </div>
 <div class="main-section">
-  <form method="post" action="/admin/category/save" class="j-form">
+  <form method="post" action="/admin/categorychild/save" class="j-form">
     <ul class="form-group form-inline">
       <li>
         <input type="text" class="form-control" name="name" value="{$data.name}" required>
         <label>栏目名称</label>
       </li>
       <li>
-        <input type="number" class="form-control" name="sort" value="{$data.sort}" required>
-        <label>排序值</label>
-      </li>
-      <li>
         <input type="number" class="form-control" name="parent_id" value="{$data.parent_id}" required>
-        <label>父排序值</label>
+        <label>父id</label>
       </li>
       <li>
         <input type="hidden" name="id" value="{$id}">
         <input type="submit" value="提交表单" class="btn btn-primary">
-        <a href="/admin/category/index" class="btn btn-default">返回列表</a>
+        <a href="/admin/categorychild/index" class="btn btn-default">返回列表</a>
       </li>
     </ul>
   </form>
 </div>
 <script>
-  main.menuActive('category');
+  main.menuActive('categorychild');
   main.ajaxForm('.j-form', function () {
-    main.content('/admin/category/index');
+    main.content('/admin/categorychild/index');
   });
 </script>

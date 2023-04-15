@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.3.1, created on 2023-04-12 14:40:33
+/* Smarty version 4.3.1, created on 2023-04-15 03:48:31
   from 'D:\chenjunhui\chencms\cms\resources\views\admin\layout.html' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.3.1',
-  'unifunc' => 'content_64365261137335_12403715',
+  'unifunc' => 'content_6439ae0f76b606_58483547',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '96280b2d023d5b6247353d1e4c2e657158dcb98e' => 
     array (
       0 => 'D:\\chenjunhui\\chencms\\cms\\resources\\views\\admin\\layout.html',
-      1 => 1681281629,
+      1 => 1681501707,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_64365261137335_12403715 (Smarty_Internal_Template $_smarty_tpl) {
+function content_6439ae0f76b606_58483547 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 <html>
 <head>
@@ -71,7 +71,7 @@ function content_64365261137335_12403715 (Smarty_Internal_Template $_smarty_tpl)
             </a>
           </li>
           <li>
-            <a href="/admin/category/index" data-name="category">
+            <a href="/admin/categorychild/index" data-name="category">
               <i class="fa fa-list fa-fw"></i>分类管理
             </a>
           </li>
