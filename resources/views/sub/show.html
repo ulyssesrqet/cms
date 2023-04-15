@@ -3,9 +3,9 @@
   {if $article}
     <div class="as-title"><h1>{$article.title}</h1></div>
     <div class="as-row">
-      <span>栏目：
-          {if isset($category_name)}
-            <a href="/show?id={$article.cid}">{$category_name}</a>
+      <span>分类：
+          {if isset($categorychild_name)}
+            <a href="/show?id={$article.cid}">{$categorychild_name}</a>
           {else}
             无
           {/if}

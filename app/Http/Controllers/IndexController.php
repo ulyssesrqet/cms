@@ -6,6 +6,7 @@ namespace App\Http\Controllers;
 
 use App\Article;
 use App\Category;
+use App\Categorychild;
 use App\Collect;
 use App\Comment;
 use myframe\Controller;
@@ -13,7 +14,7 @@ use myframe\Page;
 
 class IndexController extends Controller
     {
-    public function index(Category $category,Article $article)
+    public function index(Category $category,Article $article,Categorychild $categorychild)
     {    session_start();
         $user = $_SESSION['cms']['admin'];
         $id=(int)$this->request->get('id',0);
@@ -24,8 +25,8 @@ class IndexController extends Controller
         if($id){
             //筛选栏目
             $where['cid']=$id;
-            $category_name=$category->where('id',$id)->value('name');
-            $this->assign('category_name',$category_name);
+            $categorychild_name=$categorychild->where('id',$id)->value('name');
+            $this->assign('categorychild_name',$categorychild_name);
         }
         $where['show']=1;
 
@@ -39,6 +40,7 @@ class IndexController extends Controller
         $url="?id=$id&page=";
         $this->assign('page_html',Page::html($url,$total,$page,$size));
         //公共模块
+        $this->categorychild($categorychild);
         $this->category($category);
 
         $this->title($id?$category_name:"首页");
@@ -53,6 +55,11 @@ class IndexController extends Controller
        $data=$category->orderBy('id','ASC')->get();
        $this->assign('category',$data);
     }
+    public function categorychild(Categorychild $categorychild)
+    {
+        $data=$categorychild->orderBy('id','ASC')->get();
+        $this->assign('categorychild',$data);
+    }
     protected function sidebar(Article $article){
         //最新文章
         $data=$article->where('show',1)->orderBy('id','DESC')->limit(5)->get(['id','title']);
@@ -61,14 +68,14 @@ class IndexController extends Controller
         $data=$article->where('show',1)->orderBy('views','DESC')->limit(10)->get(['id','title']);
         $this->assign('article_hot',$data);
     }
-    public function show(Category $category,Article $article,Comment $comment){
+    public function show(Category $category,Categorychild $categorychild,Article $article,Comment $comment){
         session_start();
         $user = $_SESSION['cms']['admin'];
         $id=$this->request->get('id');
         $data=$article->where('id',$id)->where('show',1)->first();
         if($data){
-            $category_name=$category->where('id',$data['cid'])->value('name');
-            $this->assign('category_name',$category_name);
+            $categorychild_name=$categorychild->where('id',$data['cid'])->value('name');
+            $this->assign('categorychild_name',$categorychild_name);
         }
         $comments = $comment->getComments($id);
         $this->assign('user',$user);

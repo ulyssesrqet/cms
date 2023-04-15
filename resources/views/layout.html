@@ -98,16 +98,19 @@
           <ul>
             <li><a href="/" class="{if $id == 0}curr{/if}">首页</a></li>
             {foreach $category as $v}
-              {if $v.parent_id == 0}
                   <li class="nav-li" style="display: inline" id="nav-li">
-                      <a href="/?id={$v.id}" class="{if $id == $v.id}curr{/if}">{$v.name}</a>
+                      <a href="">{$v.name}</a>
+<!--                      <a href="/?id={$v.id}" class="{if $id == $v.id}curr{/if}">{$v.name}</a>-->
                       <ul class="drop-box">
-                          <li class="drop-li"><a href="">例子1</a></li>
-                          <li class="drop-li"><a href="">例子2</a></li>
-                          <li class="drop-li"><a href="">例子3</a></li>
+                        {foreach $categorychild as $vc}
+                              {if $v.id == $vc.parent_id}
+                                 <li class="drop-li" >
+                                     <a href="/?id={$vc.id}" class="{if $id == $vc.id}curr{/if}">{$vc.name}</a>
+                                 </li>
+                              {/if}
+                         {/foreach}
                       </ul>
                   </li>
-              {/if}
             {/foreach}
             {if  $user.name !=""}
               <li><a href="#" style="font-size:20px;color: red"><i class="fa fa-user fa-fw"></i>{$user.name}</a></li>

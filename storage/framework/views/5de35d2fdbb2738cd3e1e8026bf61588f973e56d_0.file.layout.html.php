@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.3.1, created on 2023-04-15 03:05:58
+/* Smarty version 4.3.1, created on 2023-04-15 11:29:49
   from 'D:\chenjunhui\chencms\cms\resources\views\layout.html' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.3.1',
-  'unifunc' => 'content_6439a4160d9148_58553723',
+  'unifunc' => 'content_643a1a2d01c366_27237468',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '5de35d2fdbb2738cd3e1e8026bf61588f973e56d' => 
     array (
       0 => 'D:\\chenjunhui\\chencms\\cms\\resources\\views\\layout.html',
-      1 => 1681499155,
+      1 => 1681529376,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_6439a4160d9148_58553723 (Smarty_Internal_Template $_smarty_tpl) {
+function content_643a1a2d01c366_27237468 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, false);
 ?>
@@ -134,18 +134,31 @@ $_smarty_tpl->tpl_vars['v']->do_else = true;
 if ($_from !== null) foreach ($_from as $_smarty_tpl->tpl_vars['v']->value) {
 $_smarty_tpl->tpl_vars['v']->do_else = false;
 ?>
-              <?php if ($_smarty_tpl->tpl_vars['v']->value['parent_id'] == 0) {?>
                   <li class="nav-li" style="display: inline" id="nav-li">
-                      <a href="/?id=<?php echo htmlentities(mb_convert_encoding((string)$_smarty_tpl->tpl_vars['v']->value['id'], 'UTF-8', 'UTF-8'), ENT_QUOTES, 'UTF-8', true);?>
-" class="<?php if ($_smarty_tpl->tpl_vars['id']->value == $_smarty_tpl->tpl_vars['v']->value['id']) {?>curr<?php }?>"><?php echo htmlentities(mb_convert_encoding((string)$_smarty_tpl->tpl_vars['v']->value['name'], 'UTF-8', 'UTF-8'), ENT_QUOTES, 'UTF-8', true);?>
+                      <a href=""><?php echo htmlentities(mb_convert_encoding((string)$_smarty_tpl->tpl_vars['v']->value['name'], 'UTF-8', 'UTF-8'), ENT_QUOTES, 'UTF-8', true);?>
 </a>
+<!--                      <a href="/?id=<?php echo htmlentities(mb_convert_encoding((string)$_smarty_tpl->tpl_vars['v']->value['id'], 'UTF-8', 'UTF-8'), ENT_QUOTES, 'UTF-8', true);?>
+" class="<?php if ($_smarty_tpl->tpl_vars['id']->value == $_smarty_tpl->tpl_vars['v']->value['id']) {?>curr<?php }?>"><?php echo htmlentities(mb_convert_encoding((string)$_smarty_tpl->tpl_vars['v']->value['name'], 'UTF-8', 'UTF-8'), ENT_QUOTES, 'UTF-8', true);?>
+</a>-->
                       <ul class="drop-box">
-                          <li class="drop-li"><a href="">例子1</a></li>
-                          <li class="drop-li"><a href="">例子2</a></li>
-                          <li class="drop-li"><a href="">例子3</a></li>
+                        <?php
+$_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['categorychild']->value, 'vc');
+$_smarty_tpl->tpl_vars['vc']->do_else = true;
+if ($_from !== null) foreach ($_from as $_smarty_tpl->tpl_vars['vc']->value) {
+$_smarty_tpl->tpl_vars['vc']->do_else = false;
+?>
+                              <?php if ($_smarty_tpl->tpl_vars['v']->value['id'] == $_smarty_tpl->tpl_vars['vc']->value['parent_id']) {?>
+                                 <li class="drop-li" >
+                                     <a href="/?id=<?php echo htmlentities(mb_convert_encoding((string)$_smarty_tpl->tpl_vars['vc']->value['id'], 'UTF-8', 'UTF-8'), ENT_QUOTES, 'UTF-8', true);?>
+" class="<?php if ($_smarty_tpl->tpl_vars['id']->value == $_smarty_tpl->tpl_vars['vc']->value['id']) {?>curr<?php }?>"><?php echo htmlentities(mb_convert_encoding((string)$_smarty_tpl->tpl_vars['vc']->value['name'], 'UTF-8', 'UTF-8'), ENT_QUOTES, 'UTF-8', true);?>
+</a>
+                                 </li>
+                              <?php }?>
+                         <?php
+}
+$_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
                       </ul>
                   </li>
-              <?php }?>
             <?php
 }
 $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
@@ -168,7 +181,7 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
   <!--页面内容-->
   <div class="main">
     <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_12240726176439a4160d7dd5_02645174', "content");
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_1359463674643a1a2d01add9_71493061', "content");
 ?>
 
   </div>
@@ -184,12 +197,12 @@ $_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_12240726176439a416
 
 <?php }
 /* {block "content"} */
-class Block_12240726176439a4160d7dd5_02645174 extends Smarty_Internal_Block
+class Block_1359463674643a1a2d01add9_71493061 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'content' => 
   array (
-    0 => 'Block_12240726176439a4160d7dd5_02645174',
+    0 => 'Block_1359463674643a1a2d01add9_71493061',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {

@@ -3,6 +3,7 @@ namespace App\Http\Controllers\Admin;
 
 use App\Article;
 use App\Category;
+use App\Categorychild;
 use myframe\Page;
 use HTMLPurifier;
 
@@ -29,7 +30,7 @@ class ArticleController extends CommonController
         $this->success('删除成功');
     }
 
-    public function edit(Article $article, Category $category)
+    public function edit(Article $article, Categorychild $category)
     {
         $id = $this->request->get('id', '');
         if ($id) {
@@ -47,7 +48,7 @@ class ArticleController extends CommonController
                 'show' => '0'
             ];
         }
-        $cgData = $category->orderBy('sort', 'ASC')->get();
+        $cgData = $category->orderBy('id', 'ASC')->get();
         $this->assign('id', $id);
         $this->assign('data', $data);
         $this->assign('category', $cgData);

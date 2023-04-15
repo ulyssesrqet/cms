@@ -2,14 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="37459644-df01-4adc-8f01-b84b4b242fb3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Categorychild.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/category_edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/category_edit.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/category_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/category_list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/layout.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/layout.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/framework/views/241e9e536b9382285a52191a6b577babe7410454_0.file.category_list.html.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/241e9e536b9382285a52191a6b577babe7410454_0.file.category_list.html.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/framework/views/96280b2d023d5b6247353d1e4c2e657158dcb98e_0.file.layout.html.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/96280b2d023d5b6247353d1e4c2e657158dcb98e_0.file.layout.html.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/framework/views/ee13c92b58da24a9ce27948e5f3106a911cfed10_0.file.category_edit.html.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/ee13c92b58da24a9ce27948e5f3106a911cfed10_0.file.category_edit.html.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/ArticleController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/ArticleController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/IndexController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/IndexController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layout.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layout.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/sub/show.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/sub/show.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/59d6eccfc921844ef6035e0550f444991d56c5e6_0.file.show.html.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/59d6eccfc921844ef6035e0550f444991d56c5e6_0.file.show.html.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/5de35d2fdbb2738cd3e1e8026bf61588f973e56d_0.file.layout.html.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/5de35d2fdbb2738cd3e1e8026bf61588f973e56d_0.file.layout.html.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -130,7 +129,7 @@
       <workItem from="1681470841177" duration="185000" />
       <workItem from="1681471087111" duration="7103000" />
       <workItem from="1681484783644" duration="7208000" />
-      <workItem from="1681499432398" duration="5002000" />
+      <workItem from="1681499432398" duration="12780000" />
     </task>
     <servers />
   </component>

@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.3.1, created on 2023-04-11 22:48:38
+/* Smarty version 4.3.1, created on 2023-04-15 12:49:30
   from 'D:\chenjunhui\chencms\cms\resources\views\sub\show.html' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.3.1',
-  'unifunc' => 'content_64357346ad4bb1_53453246',
+  'unifunc' => 'content_643a2cdadff0f7_70997472',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '59d6eccfc921844ef6035e0550f444991d56c5e6' => 
     array (
       0 => 'D:\\chenjunhui\\chencms\\cms\\resources\\views\\sub\\show.html',
-      1 => 1655022910,
+      1 => 1681534161,
       2 => 'file',
     ),
   ),
@@ -20,17 +20,17 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_64357346ad4bb1_53453246 (Smarty_Internal_Template $_smarty_tpl) {
+function content_643a2cdadff0f7_70997472 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <div class="as">
   <?php if ($_smarty_tpl->tpl_vars['article']->value) {?>
     <div class="as-title"><h1><?php echo htmlentities(mb_convert_encoding((string)$_smarty_tpl->tpl_vars['article']->value['title'], 'UTF-8', 'UTF-8'), ENT_QUOTES, 'UTF-8', true);?>
 </h1></div>
     <div class="as-row">
-      <span>栏目：
-          <?php if ((isset($_smarty_tpl->tpl_vars['category_name']->value))) {?>
+      <span>分类：
+          <?php if ((isset($_smarty_tpl->tpl_vars['categorychild_name']->value))) {?>
             <a href="/show?id=<?php echo htmlentities(mb_convert_encoding((string)$_smarty_tpl->tpl_vars['article']->value['cid'], 'UTF-8', 'UTF-8'), ENT_QUOTES, 'UTF-8', true);?>
-"><?php echo htmlentities(mb_convert_encoding((string)$_smarty_tpl->tpl_vars['category_name']->value, 'UTF-8', 'UTF-8'), ENT_QUOTES, 'UTF-8', true);?>
+"><?php echo htmlentities(mb_convert_encoding((string)$_smarty_tpl->tpl_vars['categorychild_name']->value, 'UTF-8', 'UTF-8'), ENT_QUOTES, 'UTF-8', true);?>
 </a>
           <?php } else { ?>
             无
